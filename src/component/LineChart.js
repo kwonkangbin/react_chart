@@ -12,7 +12,7 @@ function LineChart({graphInfos, data}) {
 
         graphInfos.forEach((info)=>{
           const xFunc = (_, index) => index * 30;
-          const yFunc = (ydata) => 40 - ydata[info.key];
+          const yFunc = (ydata) => yScaleFunc(40 - ydata[info.key]);
           const lineGenerator = d3.line().x(xFunc).y(yFunc);
 
         svg
