@@ -4,11 +4,12 @@ import E2 from './component/E2'
 import E3 from './component/E3'
 import E4 from './component/E4'
 import E5 from './component/E5'
+import E7 from './component/E7'
 
 function App() {
   return (
     <div className="App">
-      <E5></E5>
+      <E7></E7>
     </div>
   );
 }
